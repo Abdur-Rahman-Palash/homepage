@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamiatul Ikhlas - Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="islamic-pattern"></div>
+        <div class="greeting">
+            <p class="arabic">السلام عليكم ورحمة الله وبركاته</p>
+            <p class="english">Peace and blessings be upon you all</p>
+            <p class="arabic">أهلاً وسهلاً إلى جامعة الإخلاص</p>
+            <p class="english">Welcome to Jamiatul Ikhlas</p>
+        </div>
+    </header>
+
+    <div class="top-bar">
+        <div class="logo-section">
+            <img src="placeholder-logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <span class="arabic">جامعة الإخلاص</span>
+                <span class="english">Jamiatul Ikhlas</span>
+            </div>
+        </div>
+        <div class="datetime-section">
+            <div id="clock">12:00:00</div>
+            <div id="date">
+                <span id="gregorian-date">January 1, 2024</span>
+                <span id="islamic-date">Rajab 1, 1445</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li class="menu-item-has-children">
+                <a href="#"><i class="fas fa-info-circle"></i> About Us <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#"><i class="fas fa-eye"></i> Vision</a></li>
+                    <li><a href="#"><i class="fas fa-bullseye"></i> Mission</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Board/Committees</a></li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children">
+                <a href="#"><i class="fas fa-hands-praying"></i> Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#"><i class="fas fa-mosque"></i> Daily Prayer</a></li>
+                    <li><a href="#"><i class="fas fa-kaaba"></i> Friday Prayer</a></li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children">
+                <a href="#"><i class="fas fa-book-quran"></i> Programs <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#"><i class="fas fa-school"></i> Maktab</a></li>
+                    <li><a href="#"><i class="fas fa-quran"></i> Tahfidhul Quran</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Islamic School</a></li>
+                    <li><a href="#"><i class="fas fa-person-praying"></i> Quran for Adults</a></li>
+                    <li><a href="#"><i class="fas fa-laptop"></i> Online Alimiyyah</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-grid">
+        <div class="left-column">
+            <div class="box notices">
+                <h2>Current Notices</h2>
+                <div class="box-content">
+                    <ul>
+                        <li>Friday Prayer Time: 1:30 PM</li>
+                        <li>New Islamic Course Starting Soon</li>
+                        <li>Ramadan Schedule Update</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box prayer-times">
+                <h2>Prayer Times</h2>
+                <div class="box-content">
+                    <table>
+                        <tr><td>Fajr</td><td>5:30 AM</td></tr>
+                        <tr><td>Dhuhr</td><td>1:30 PM</td></tr>
+                        <tr><td>Asr</td><td>4:45 PM</td></tr>
+                        <tr><td>Maghrib</td><td>7:15 PM</td></tr>
+                        <tr><td>Isha</td><td>8:45 PM</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-column">
+            <div class="box quran-display">
+                <h2>Quranic Verse of the Day</h2>
+                <div class="box-content">
+                    <p class="arabic">إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ</p>
+                    <p class="english">"Indeed, actions are judged by intentions."</p>
+                </div>
+            </div>
+            <div class="box hadith-display">
+                <h2>Hadith of the Day</h2>
+                <div class="box-content">
+                    <p class="arabic">الدين النصيحة</p>
+                    <p class="english">"The religion is sincerity."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="box photo-gallery">
+                <h2>Photo Gallery</h2>
+                <div class="box-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">Image 1</div>
+                        <div class="gallery-item">Image 2</div>
+                        <div class="gallery-item">Image 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add before closing body tag -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1000,
+                    once: true
+                });
+            </script>
+            <script src="js/clock.js"></script>
+            <script src="js/prayer-times.js"></script>
+            <script src="js/quran-verse.js"></script>
+</body>
+</html>
